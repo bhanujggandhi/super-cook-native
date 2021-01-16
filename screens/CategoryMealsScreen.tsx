@@ -23,13 +23,11 @@ const CategoryMealScreen = ({ navigation }: CategoryMealsScreenProps) => {
 };
 
 CategoryMealScreen.navigationOptions = (navigationData: any) => {
-  const catId: string = navigationData.navigation.navigationOptions.getParam(
-    "categoryId"
-  );
-  const selectCategory = CATEGORIES.find((cat) => cat.id === catId);
+  const catId = navigationData.navigation.getParam("categoryId");
+  const selectedCategory = CATEGORIES.find((cat) => cat.id === catId);
 
   return {
-    headerTitle: selectCategory ? selectCategory?.title : "",
+    title: selectedCategory?.title,
   };
 };
 
