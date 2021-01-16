@@ -1,10 +1,21 @@
 import React from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, Button } from "react-native";
+import { NavigationStackProp } from "react-navigation-stack";
 
-const CategoriesScreen = () => {
+interface CategoryScreenProps {
+  navigation: NavigationStackProp<any, any>;
+}
+
+const CategoriesScreen = ({ navigation }: CategoryScreenProps) => {
   return (
     <View style={styles.screen}>
       <Text>The Categories Screen!</Text>
+      <Button
+        title='hii'
+        onPress={() => {
+          navigation.navigate("CategoryMeals");
+        }}
+      />
     </View>
   );
 };
