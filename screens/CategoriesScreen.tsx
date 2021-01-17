@@ -34,6 +34,4 @@ CategoriesScreen.navigationOptions = {
   headerTitle: "Meal Categories",
 };
 
-const styles = StyleSheet.create({});
-
 export default CategoriesScreen;
