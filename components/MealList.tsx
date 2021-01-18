@@ -1,8 +1,16 @@
 import React from "react";
 import { View, FlatList, StyleSheet } from "react-native";
-import MealItem from "./MealItem";
+import { NavigationStackProp } from "react-navigation-stack";
 
-const MealList = ({ listData, navigation }) => {
+import MealItem from "./MealItem";
+import Meal from "../models/meal";
+
+type Props = {
+  listData: Meal[];
+  navigation: NavigationStackProp;
+};
+
+const MealList = ({ listData, navigation }: Props) => {
   const renderMealItem = (itemData: any) => (
     <MealItem
       title={itemData.item.title}

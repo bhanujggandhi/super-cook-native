@@ -46,7 +46,7 @@ const tabScreenConfig = {
   Meals: {
     screen: MealsNavigator,
     navigationOptions: {
-      tabBarIcon: (tabInfo) => {
+      tabBarIcon: (tabInfo: any) => {
         return (
           <Ionicons name='ios-restaurant' size={25} color={tabInfo.tintColor} />
         );
@@ -57,7 +57,7 @@ const tabScreenConfig = {
   Favorites: {
     screen: FavNavigator,
     navigationOptions: {
-      tabBarIcon: (tabInfo) => {
+      tabBarIcon: (tabInfo: any) => {
         return <Ionicons name='ios-star' size={25} color={tabInfo.tintColor} />;
       },
       tabBarColor: Colors.accentColor,

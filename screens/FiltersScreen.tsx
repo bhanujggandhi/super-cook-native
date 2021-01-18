@@ -12,7 +12,7 @@ const FiltersScreen = () => {
   );
 };
 
-FiltersScreen.navigationOptions = (navData) => {
+FiltersScreen.navigationOptions = (navData: any) => {
   return {
     headerTitle: "Filter Meals",
     headerLeft: () => (

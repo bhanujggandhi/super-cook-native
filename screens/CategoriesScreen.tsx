@@ -32,7 +32,7 @@ const CategoriesScreen = ({ navigation }: CategoriesScreenProps) => {
   );
 };
 
-CategoriesScreen.navigationOptions = (navData) => {
+CategoriesScreen.navigationOptions = (navData: any) => {
   return {
     headerTitle: "Meal Categories",
     headerLeft: () => (
